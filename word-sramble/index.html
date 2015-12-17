@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-app="ngApp"  >
+
+  <div ng-controller="myCtrl" class="center" >
+    <span class="item" ng-repeat="item in arr track by item.id" ng-style="getAbsPos(item.xpos)" >{{item.id}} </span>
+    <br />    <br />    <br />    <br />    <br />
+    
+   <input ng-model="result" type="text" placeholder="Enter here......"  ng-keydown="swap($event)">
+   <br/><br/>
+   <h2 align="center" ng-bind="message">  </h2>
+   
+   </div>
+	
+  <!--  <input type="text" ng-keypress="swap($event)"> -->
+   
+    <!-- <button style="margin-top:200px" ng-click="swap()">swap A and C position</button> -->
+
+  </div>
+
+  <script data-require="angular.js@*" data-semver="1.2.16" src="http://code.angularjs.org/1.2.16/angular.js"></script>
+  <script src="http://code.angularjs.org/1.2.16/angular-animate.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
