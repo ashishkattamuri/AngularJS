@@ -124,10 +124,10 @@ function(response)
 		$scope.charCount = $scope.charCount+1;
 	
 		//console.log("$scope.charCount:"+$scope.charCount);
-		//console.log("$scope.currentKeyPress:"+$scope.currentKeyPress);
+		console.log("$scope.currentKeyPress:"+$scope.currentKeyPress);
 
 		var currentChar = $scope.AllChars.charAt( $scope.currentKeyPress- 65);  
-		//console.log("currentChar="+currentChar);    
+		console.log("currentChar="+currentChar);    
 		var found = $filter('getById')($scope.arr, currentChar);
   
 		var indexSwapFrom= $scope.arr.indexOf(currentChar);
