@@ -7,8 +7,9 @@
 
 <body ng-app="ngApp"  >
 
-  <div ng-controller="myCtrl" class="center" >
-    <span class="item" ng-repeat="item in arr track by item.id" ng-style="getAbsPos(item.xpos)" >{{item.id}} </span>
+<h2 align="center"> Word Scramble </h2>  
+<div ng-controller="myCtrl" class="center" >
+    <span class="item" ng-repeat="item in arr track by item.id" ng-style="getAbsPos(item.xpos)"> {{item.id}} </span>
     <br />    <br />    <br />    <br />    <br />
     
    <input ng-model="result" type="text" placeholder="Enter here......"  ng-keydown="swap($event)">

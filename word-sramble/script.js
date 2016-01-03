@@ -19,6 +19,7 @@ app.controller('myCtrl', function($scope, $http, $timeout, $filter, $window) {
 
 $scope.arr=[];
 var arr=[];
+
 $scope.word="";
 $scope.result="";
 $scope.message="";
